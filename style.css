@@ -533,8 +533,11 @@ video {
     display: flex;
     height: 30rem;
     text-align: center;
+    color: #fff;
 }
 
+
+/* 
 .footerdiv1 {
     background-color: #2413b8;
     width: 24rem;
@@ -565,4 +568,4 @@ video {
     width: 24rem;
     background-color: yellow;
     padding-top: 5rem;
-}
+} */
