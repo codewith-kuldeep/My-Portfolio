@@ -61,6 +61,13 @@ body {
 
 .navtag ul {
     list-style: none;
+    position: absolute;
+}
+
+.navtag ul li {
+    display: flex;
+    position: relative;
+    top: -0.9rem;
 }
 
 .navtag ul li a {
@@ -70,10 +77,40 @@ body {
     font-style: italic bolder;
 }
 
+.dds {
+    display: none;
+    height: 5rem;
+    width: 12rem;
+    padding: 1rem;
+}
+
+.navtag ul li:hover .dds {
+    display: block;
+    position: absolute;
+    right: 6rem;
+    top: 2.5rem;
+    /* border: 1px solid black;
+    border-radius: 10px; */
+    z-index: 1;
+}
+
+.dds ul {
+    display: block;
+}
+
+.dds ul li {
+    display: block;
+}
+
+.dds ul li a {
+    display: block;
+    color: #000000;
+}
+
 .btn {
     display: block;
     margin-left: 75rem;
-    margin-top: -1.4rem;
+    margin-top: -0.1rem;
 }
 
 .btn ul {
@@ -225,7 +262,8 @@ body {
 .main-content-pic {
     width: 600px;
     position: relative;
-    right: -10rem;
+    right: -7rem;
+    top: 1rem;
 }
 
 .main-content-pic img {
@@ -325,7 +363,7 @@ body {
 /* divider 2 ........................................................................................................*/
 
 .divider2web {
-    display: inline;
+    display: block;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -367,6 +405,13 @@ body {
     left: 2.2rem;
     color: #fff;
     font-size: 20px;
+}
+
+.dev_pic {
+    position: absolute;
+    top: -11.7rem;
+    left: -30rem;
+    z-index: 1;
 }
 
 
