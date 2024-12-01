@@ -10,7 +10,10 @@ body {
 
 .navbar {
     height: 75px;
+    width: 100%;
     background-color: #fff;
+    position: fixed;
+    z-index: 11111;
 }
 
 
@@ -28,14 +31,6 @@ body {
     font-size: 30px;
     width: 100%;
     height: -1rem;
-    display: flex;
-}
-
-.logoimg img {
-    width: 2rem;
-    height: -1rem;
-    margin-left: 12.5rem;
-    margin-top: -4.45rem;
     display: flex;
 }
 
@@ -74,7 +69,7 @@ body {
     padding: 1rem;
     text-decoration: none;
     font-size: 20px;
-    font-style: italic bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .dds {
@@ -130,7 +125,7 @@ body {
 /* main  contant  ...................................................................................................... */
 
 .main-contant {
-    height: 550px;
+    height: 600px;
     /* border: 1px solid black; */
     display: flex;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -138,8 +133,8 @@ body {
 
 .main-contant-heading {
     position: relative;
-    top: 8rem;
-    left: 10rem;
+    top: 12rem;
+    left: 10.6rem;
     font-size: 16px;
     display: inline-block;
 }
@@ -263,14 +258,14 @@ body {
     width: 600px;
     position: relative;
     right: -7rem;
-    top: 1rem;
+    top: 6rem;
 }
 
 .main-content-pic img {
     border-radius: 30% 1% 30% 1%;
     width: 50%;
-    height: 548px;
-    width: 100%;
+    height: 500px;
+    width: 35rem;
     position: relative;
 }
 
@@ -568,49 +563,151 @@ video {
 }
 
 .footer {
-    height: 30rem;
-    background-color: #6674cc;
+    height: 22rem;
+    background-color: #fff;
     border-top: 2px solid black;
 }
 
 .mainfooter {
     margin-top: 1rem;
     display: flex;
-    height: 30rem;
+    height: 15rem;
     text-align: center;
-    color: #fff;
+    padding-bottom: 8rem;
 }
 
-
-/* 
 .footerdiv1 {
-    background-color: #2413b8;
+    background-color: #fff;
     width: 24rem;
-    padding-top: 5rem;
+    padding-top: 10rem;
+    display: inline;
+}
+
+.footerlogoheading h1 {
+    margin-left: 10rem;
+    margin-top: -6rem;
+    margin-bottom: 2.25rem;
+    font-size: 30px;
+    width: 100%;
+    height: -1rem;
+    display: flex;
+}
+
+.footerdiv1 a {
+    font-size: larger;
+    position: relative;
+    top: -0.7rem;
+    text-decoration: none;
+}
+
+.footerlogoname img {
+    width: 5rem;
+    height: 1.5rem;
+    margin-left: -2rem;
+    margin-top: -4rem;
+    background-color: black;
+    border-radius: 5px;
+    display: inline;
+    position: relative;
+    top: -1.8rem;
 }
 
 .footerdiv2 {
-    background-color: red;
+    background-color: #fff;
     width: 24rem;
-    padding-top: 5rem;
+    padding-top: 4.5rem;
+    text-decoration: none;
+}
+
+.footerdiv2 h1 a {
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    top: 0.1rem;
 }
 
 .footerdiv2 ul {
-    display: none;
+    list-style: none;
 }
 
 .footerdiv2 ul li {
     text-decoration: none;
 }
 
+.footerdiv2 ul li a {
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    top: 1rem;
+    left: 9.4rem;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+.footerdiv2 p {
+    position: relative;
+    top: 1.8rem;
+    left: 2.19rem;
+    font-size: 20px;
+}
+
 .footerdiv3 {
     width: 24rem;
-    background-color: black;
+    background-color: #fff;
     padding-top: 5rem;
+    display: inline;
+}
+
+.footerdiv3content h1 {
+    position: relative;
+    top: -0.4rem;
+}
+
+#mail1 {
+    position: relative;
+    left: 2.1rem;
+}
+
+.footerdiv3content span {
+    position: relative;
+    left: -2.1rem;
+}
+
+.footerdiv3content p {
+    position: relative;
+    top: 0.5rem;
+    left: 2.2rem;
+    justify-content: left;
+    margin-top: 1rem;
+    font-size: 18px;
 }
 
 .footerdiv4 {
     width: 24rem;
-    background-color: yellow;
+    background-color: #fff;
     padding-top: 5rem;
-} */
+}
+
+.footerdiv4content h1 {
+    position: relative;
+    top: -0.4rem;
+}
+
+.footerdiv4content ul {
+    text-decoration: none;
+}
+
+.footerdiv4content ul li {
+    text-decoration: none;
+    display: inline;
+}
+
+.footerdiv4content ul li a {
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    top: 0.2rem;
+    left: 4.8rem;
+    margin-top: 1rem;
+    font-size: 20px;
+}
