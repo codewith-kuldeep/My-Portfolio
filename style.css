@@ -45,7 +45,7 @@ body {
 }
 
 
-/* navtags like home ....................................................................................................... */
+/* navtags like home, service, aboutme, contact ....................................................................................................... */
 
 .navtag {
     display: flex;
@@ -55,6 +55,7 @@ body {
 }
 
 .navtag ul {
+    display: flex;
     list-style: none;
     position: absolute;
 }
@@ -66,26 +67,43 @@ body {
 }
 
 .navtag ul li a {
+    display: flex;
     padding: 1rem;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
 }
+
+.navtag ul li a:hover {
+    box-shadow: 0px 5px 5px 1px rgb(54, 75, 197);
+    border-radius: 10rem;
+}
+
+
+/*Dropdown navbar of service like web development and vfx ...................................................................................*/
 
 .dds {
     display: none;
-    height: 5rem;
-    width: 12rem;
+    height: 7rem;
+    width: 15rem;
     padding: 1rem;
+    font-weight: 400;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 15px;
+}
+
+.dds a:hover {
+    box-shadow: 1px 5px 5px 1px rgb(54, 75, 197);
+    border-radius: 10rem;
 }
 
 .navtag ul li:hover .dds {
-    display: block;
+    display: inline;
     position: absolute;
-    right: 6rem;
-    top: 2.5rem;
-    /* border: 1px solid black;
-    border-radius: 10px; */
+    right: -6.5rem;
+    top: 3.5rem;
     z-index: 1;
 }
 
@@ -100,25 +118,102 @@ body {
 .dds ul li a {
     display: block;
     color: #000000;
+    font-size: 20px;
+    font-weight: 450;
+    font: bolder;
 }
 
+
+/*Dropdown navbar of service -> webdevelopment...................................................................................*/
+
+.ddwd {
+    display: none;
+    height: 28.5rem;
+    width: 12rem;
+    padding: 1rem;
+    font-weight: 400;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 15px;
+}
+
+.dds ul li:hover .ddwd {
+    display: inline;
+    position: absolute;
+    right: 14rem;
+    top: 0.1rem;
+    z-index: 1;
+}
+
+.ddwd a:hover {
+    border: 1px solid rgb(54, 75, 197);
+}
+
+
+/*Dropdown navbar of service -> video editing...................................................................................*/
+
+.ddve {
+    display: none;
+    height: 10rem;
+    width: 10rem;
+    padding: 1rem;
+    font-weight: 400;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 15px;
+}
+
+.dds ul li:hover .ddve {
+    display: inline;
+    position: absolute;
+    right: 14rem;
+    top: -0.1rem;
+    z-index: 1;
+}
+
+.ddve ul {
+    display: inline;
+}
+
+.ddve ul li {
+    display: inline;
+}
+
+.ddve ul li a {
+    font-size: 20px;
+}
+
+.ddve a:hover {
+    border: 1px solid rgb(54, 75, 197);
+    box-shadow: 1px 5px 5px 1px rgb(54, 75, 197);
+    border-radius: 10rem;
+}
+
+
+/*again navtag like home, but its a login or sign up button */
+
 .btn {
-    display: block;
     margin-left: 75rem;
-    margin-top: -0.1rem;
+    margin-top: -0rem;
 }
 
 .btn ul {
+    display: flex;
     list-style: none;
 }
 
 .btn ul li a {
-    font-size: 21px;
+    font-size: 20px;
     padding: 5px;
     margin: 1rem;
     text-decoration: none;
-    border: 1px solid black;
-    border-radius: 5px;
+    color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn ul li a:hover {
+    box-shadow: 1px 5px 5px 1px rgb(54, 75, 197);
+    border-radius: 10rem;
 }
 
 
@@ -134,7 +229,7 @@ body {
 .main-contant-heading {
     position: relative;
     top: 12rem;
-    left: 10.6rem;
+    left: 8rem;
     font-size: 16px;
     display: inline-block;
 }
@@ -255,10 +350,11 @@ body {
 }
 
 .main-content-pic {
+    height: 31.1rem;
     width: 600px;
     position: relative;
     right: -7rem;
-    top: 6rem;
+    top: 7rem;
 }
 
 .main-content-pic img {
@@ -274,7 +370,6 @@ body {
 
 .divider1vid {
     height: 206px;
-    /* background-color: #364bc5;  */
     background-color: #364bc5c6;
     display: flex;
     align-items: center;
@@ -358,12 +453,13 @@ body {
 /* divider 2 ........................................................................................................*/
 
 .divider2web {
-    display: block;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     position: relative;
+    top: -2.5rem;
     left: 40rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -404,9 +500,29 @@ body {
 
 .dev_pic {
     position: absolute;
-    top: -11.7rem;
+    top: -5.2rem;
     left: -30rem;
     z-index: 1;
+}
+
+.dev_pic img {
+    filter: drop-shadow(10px 9px 10px #000000);
+}
+
+.viddev_pic {
+    position: absolute;
+    top: -0.45rem;
+    left: 30rem;
+    z-index: 1;
+    width: 5rem;
+}
+
+.viddev_pic img {
+    height: 20.95rem;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    box-shadow: 1px 5px 5px 1px #000000;
+    border-radius: 5px;
 }
 
 
@@ -565,7 +681,7 @@ video {
 .footer {
     height: 22rem;
     background-color: #fff;
-    border-top: 2px solid black;
+    box-shadow: 0px 0px 10px 5px #000000;
 }
 
 .mainfooter {
@@ -578,9 +694,9 @@ video {
 
 .footerdiv1 {
     background-color: #fff;
-    width: 24rem;
     padding-top: 10rem;
     display: inline;
+    width: 24rem;
 }
 
 .footerlogoheading h1 {
@@ -619,15 +735,26 @@ video {
     text-decoration: none;
 }
 
+.footerdiv2content {
+    position: relative;
+    top: 0.3rem;
+    height: 10rem;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+
 .footerdiv2 h1 a {
     text-decoration: none;
     display: inline;
     position: relative;
     top: 0.1rem;
+    left: -1rem;
 }
 
 .footerdiv2 ul {
     list-style: none;
+    position: relative;
+    left: -1rem;
 }
 
 .footerdiv2 ul li {
@@ -647,7 +774,7 @@ video {
 .footerdiv2 p {
     position: relative;
     top: 1.8rem;
-    left: 2.19rem;
+    left: 1.2rem;
     font-size: 20px;
 }
 
@@ -656,6 +783,10 @@ video {
     background-color: #fff;
     padding-top: 5rem;
     display: inline;
+}
+
+.footerdiv3content {
+    border-right: 1px solid #000000;
 }
 
 .footerdiv3content h1 {
