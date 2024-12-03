@@ -24,7 +24,7 @@ body {
 /* about us of weclome part ......................................................*/
 
 .about-devloper {
-    height: 71.9rem;
+    height: 103rem;
 }
 
 .about-us-welcm {
@@ -128,7 +128,7 @@ body {
     left: 10rem;
     background-color: aqua;
     border-radius: 2rem;
-    box-shadow: 5px 10px 15px 3px rgb(54, 75, 197);
+    box-shadow: 5px 10px 15px 3px rgb(54, 4, 4);
 }
 
 .about-viddev-founder-content {
@@ -172,4 +172,30 @@ body {
     border-bottom: 2px solid black;
     box-shadow: 1px 5px 5px 1px #000000;
     border-radius: 5px;
+}
+
+
+/*  summery content  ..........................................*/
+
+.summery {
+    position: relative;
+    top: 37.9rem;
+    height: 31rem;
+    box-shadow: 0px 0px 5px 0px #000000;
+}
+
+.summery-content {
+    position: relative;
+    top: 5rem;
+    left: 23.5rem;
+    height: 20rem;
+    width: 48rem;
+    box-shadow: 1px 5px 10px 1px rgb(54, 75, 197);
+    border-radius: 15px;
+}
+
+.summery-content p {
+    padding: 5px;
+    line-height: 3.5rem;
+    font-size: 24px;
 }
