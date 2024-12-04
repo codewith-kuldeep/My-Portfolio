@@ -109,12 +109,27 @@ body {
     display: flex;
     position: relative;
     left: -35rem;
+    width: 22rem;
     top: -23.39rem;
 }
 
 .about-webdev-founder-img img {
     height: 30rem;
 }
+
+
+/* .about-webdev-founder-img:hover .wrapper::before,
+.wrapper::after {
+    opacity: 1;
+}
+
+.about-webdev-founder-img:hover .wrapper::after {
+    height: 40rem;
+}
+
+.about-webdev-founder-img:hover {
+    transform: translate3d(0%, -50%, 100px);
+} */
 
 
 /*  vid developer content mean Ankit kumar ..........................................*/
