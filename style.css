@@ -50,7 +50,7 @@ body {
 .navtag {
     display: flex;
     position: relative;
-    margin-left: 45rem;
+    margin-left: 40rem;
     margin-top: -5.5rem;
 }
 
@@ -64,6 +64,10 @@ body {
     display: flex;
     position: relative;
     top: -0.9rem;
+}
+
+.navtag ul li i {
+    padding: 0px 5px;
 }
 
 .navtag ul li a {
@@ -229,7 +233,7 @@ body {
 .main-contant-heading {
     position: relative;
     top: 12rem;
-    left: 8rem;
+    left: 4rem;
     font-size: 16px;
     display: inline-block;
 }
